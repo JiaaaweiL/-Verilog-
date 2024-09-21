@@ -10,7 +10,7 @@ valid_b拉高的必要条件：
   - 2. 如果ready_b && valid_b 则valid_b拉低(代表和下游握手完成)
 
 ### 第三个block always_ff 控制data_out
-  - 如果valid_a ready_a ready_b valid_b 都拉高，则data_out<= data_in
+  - 如果valid_a ready_a ready_b valid_b 都拉高，则data_out<= data_in  
     valid_a  ready_a 代表着上游有效，ready_b valid_b 拉高代表下游握手完成，则下一个cc必将是开始的第一个cc
     因此输出等于输入  
   - 如果valid_a ready_a 拉高， data_out <= data_out + data_in
