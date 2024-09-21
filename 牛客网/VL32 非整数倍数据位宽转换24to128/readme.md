@@ -21,3 +21,7 @@
 
 ### always_ff
   - 用来控制输出data_out 和valid out。参照输出逻辑写就好了
+  - 多写一点儿：当cnt = 5/10/15 以及valid_in 拉高的时候，拉高valid_out
+  - 第一次的数据拼接是 {locker[119:0], data_in[23:16]}
+  - 第二次拼接的数据是 {locker[111:0], data_in[23:8]}
+  - 第三次拼接的数据是 {locker[103:0], data_in}
