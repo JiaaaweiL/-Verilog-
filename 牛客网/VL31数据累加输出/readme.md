@@ -6,7 +6,7 @@
 
 ### 第二个block always_ff 控制valid_b
 valid_b拉高的必要条件：
-  - 1. cnt 如果是3， 并且valid_a 和 valid_b都是高，则valid_b 可以拉高了
+  - 1. cnt 如果是3， 并且valid_a 和 ready_b都是高，则valid_b 可以拉高了
   - 2. 如果ready_b && valid_b 则valid_b拉低(代表和下游握手完成)
 
 ### 第三个block always_ff 控制data_out
