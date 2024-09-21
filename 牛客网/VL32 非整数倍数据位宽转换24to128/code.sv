@@ -54,7 +54,7 @@ always @(posedge clk or negedge rst_n) begin
 		end else if (valid_in && cnt == 4'd10)begin
 			data_out <= {data_lock[111 : 0], data_in[23:8]};
 		end else if (valid_in && cnt == 4'd15) begin
-			data_out <= {data_lock[119 : 0], data_in};
+			data_out <= {data_lock[103 : 0], data_in};
 		end
 	end
 end
