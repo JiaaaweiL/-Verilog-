@@ -1,0 +1,2 @@
+- 注意data_locker 的顺序（大端还是小端）
+- 注意valid-ready ready_a 一直为高（直接怼寄存器）
